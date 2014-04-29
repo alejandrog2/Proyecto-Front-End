@@ -1,0 +1,22 @@
+azul #22BCE0,
+body {
+  background: #e8e8e8;
+  color: #444;
+  font-family: arial;
+  font-size: 16px;
+}
+header {
+  background: #444;
+  color: #fff;
+  padding: 0.5em;
+}
+header .logo {
+  border-right: 1px solid azul;
+  width: 60px;
+}
+header .logo img {
+  width: 52px;
+}
+nav {
+  background: azul;
+}
