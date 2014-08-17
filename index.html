@@ -8,6 +8,9 @@
         <meta name="description" content="">
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/puls4.css" />  
+        <!--Incluir jquery-->
+        <script src="jquery-2.1.1.min.js">        
+        </script>
     </head>
     <body>
         <header>
@@ -274,5 +277,31 @@
                 </span>
             </h3>
         </footer>
+        <!--Script de la web-->
+        <script>
+			function darBienvenida(){
+				alert('Bienvenido');
+			}
+			function hacerAlgoImportante(){
+				console.log('Estoy haciendo algo importante');
+			}
+			<!--Script antiguo-->
+			/*
+			function atachar(obj, evento, funcion){
+				if(obj.addEventListener){
+					obj.addEventListener(evento, funcion);
+				}
+				else{
+					obj.attachEvent('on'+evento, funcion);
+				}
+			}
+			atachar(window, 'load', darBienvenida);
+			atachar(window, 'load', hacerAlgoImportante);*/
+			<!--Ahora con jquery-->
+			$(window)
+				.on('load', darBienvenida)
+				.on('load', hacerAlgoImportante);
+			
+		</script>
     </body>
 </html>
